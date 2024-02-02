@@ -40,6 +40,19 @@ info:
       Fast: 2
       Cheap: 2
 
+  gpt-4-32k:
+    type: chat_completion
+    name: GPT-4 32k
+    description: GPT-4 32K is the <b>smartest</b> and most advanced model in the world. But it is slower and not as cost-efficient as ChatGPT. Best choice for <b>complex</b> intellectual tasks.
+
+    price_per_1000_input_tokens: 0.06
+    price_per_1000_output_tokens: 0.12
+
+    scores:
+      Smart: 5
+      Fast: 1
+      Cheap: 1
+
   gpt-4-1106-preview:
     type: chat_completion
     name: GPT-4 Turbo
@@ -66,9 +79,9 @@ info:
       Fast: 2
       Cheap: 3
 
-  dalle-2:
+  dall-e-3:
      type: image
-     price_per_1_image: 0.018  # 512x512
+     price_per_1_image: 0.04  # 1024x1024
 
   whisper:
     type: audio
