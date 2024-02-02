@@ -249,9 +249,9 @@ async def transcribe_audio(audio_file) -> str:
     return r["text"] or ""
 
 
-async def generate_images(prompt, n_images=4):
+async def generate_images(prompt):
     r = await openai.Image.acreate(
-        n=n_images,
+        n=config.return_n_generated_images,
         prompt=prompt,
         size=config.image_size,
         model=config.image_model,

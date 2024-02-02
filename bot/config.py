@@ -25,7 +25,7 @@ mongodb_uri = f"mongodb://mongo:{config_env['MONGODB_PORT']}"
 
 image_model = config_yaml.get("image_model", "dall-e-3")
 image_quality = config_yaml.get("image_quality", "standard")
-image_style = config_yaml.get("image_style", "natural")
+image_style = config_yaml.get("image_style", "vivid")
 
 # chat_modes
 with open(config_dir / "chat_modes.yml", "r") as f:
